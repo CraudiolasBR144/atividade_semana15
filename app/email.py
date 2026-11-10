@@ -26,7 +26,6 @@ def send_email(to, subject, template, **kwargs):
     app = current_app._get_current_object()
     print('Enviando mensagem (POST)...', flush=True)
     print('URL: ' + str(app.config['API_URL']), flush=True)
-    print('api: ' + str(app.config['API_KEY']), flush=True)
     print('from: ' + str(app.config['API_FROM']), flush=True)
     print('to: ' + str(to), flush=True)
     print('subject: ' + str(app.config['FLASKY_MAIL_SUBJECT_PREFIX']) + ' ' + subject, flush=True)
